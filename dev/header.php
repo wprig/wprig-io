@@ -21,6 +21,8 @@
 		<script>document.documentElement.classList.remove("no-js");</script>
 	<?php endif; ?>
 
+	<svg xmlns="http://www.w3.org/2000/svg" width="360" height="432" id="wprig-logo"><g class="logo-wp"><path d="M72 72H0v216h72V144h72V72zM216 72v72h72v72h-72v-72h-72v144h144v36c0 19.9-16.1 36-36 36H144v72h144c39.8 0 72-32.2 72-72V72H216z"/></g><g class="logo-rig"><path d="M29.6 432H13.1L.3 359.8h18.9l4.8 40 9.7-40h15.1l9.7 40 4.9-40h18.8L69.6 432H53l-11.7-43.5L29.6 432zM105.6 407.6V432H88.2v-72.2h24.3c14.1 0 23.8 7.3 23.8 23.4 0 16-9.5 24.4-23.8 24.4h-6.9zm3.5-14.4c7.2 0 9.7-2.7 9.7-9.9 0-5.9-2.5-9-9.7-9h-3.6v18.9h3.6z"/></g><path d="M144 0h72v72h-72z" class="logo-dot"/></svg>
+
 	<?php wp_head(); ?>
 </head>
 
@@ -34,6 +36,7 @@
 				</figure>
 			<?php endif; ?>
 			<div class="site-branding">
+				<use href="#wprig-logo" />
 				<?php the_custom_logo(); ?>
 				<?php if ( is_front_page() && is_home() ) : ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
