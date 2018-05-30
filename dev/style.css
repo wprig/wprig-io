@@ -733,14 +733,17 @@ textarea {
 	margin: 0 auto;
 }
 
-.custom-logo-link {
-	display: inline-block;
-	margin: 0 auto 1em;
-}
-
 .site-branding {
 	text-align: center;
 	padding: 60px 0 1.75em;
+}
+
+.site-logo {
+
+}
+
+.logo-dot {
+	fill: var(--key-color);
 }
 
 .site-title {
