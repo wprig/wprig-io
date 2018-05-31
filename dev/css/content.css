@@ -63,7 +63,8 @@
 .site-info,
 .post-navigation,
 .page-navigation,
-.comments-area {
+.comments-area,
+.archive-description {
 	margin: 1.5em auto;
 	padding-right: 24px;
 	padding-right: 1.5rem;
@@ -83,7 +84,8 @@
 	.site-info,
 	.post-navigation,
 	.page-navigation,
-	.comments-area {
+	.comments-area,
+	.archive-description {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
@@ -101,7 +103,7 @@
 .entry-footer {
 	clear: both;
 	padding: 1.5em 1.5rem 3em;
-	border-bottom: 1px solid #111;
+	border-bottom: 1px solid var(--border-color);
 }
 
 @media (--content-query) {
@@ -144,6 +146,51 @@
 		margin-left: calc((100% - var(--content-width)rem) / 2);
 	}
 
+}
+
+/*--------------------------------------------------------------
+## Learn pages
+--------------------------------------------------------------*/
+
+.lil-embed {
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%;
+}
+
+.lil-embed iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: calc(50vw + var(--content-width)rem / 2);
+	height: 100%;
+	border: 0;
+}
+
+@media (--content-query) {
+	.single-learn .post-navigation .nav-previous {
+		flex: none;
+	}
+
+	.single-learn .post-navigation .nav-next {
+		text-align: start;
+		flex: none;
+	}
+}
+
+.video-thumb img {
+	filter: grayscale();
+	transition: filter .3s;
+}
+
+a:hover .video-thumb img,
+a:focus .video-thumb img {
+	filter: none;
+}
+
+.rel-title {
+	font-size: 110%;
 }
 
 /*--------------------------------------------------------------

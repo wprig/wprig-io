@@ -13,7 +13,11 @@
  */
 
 get_header(); ?>
-
+<?php
+if ( is_page( 'learn' ) ) {
+	wp_print_styles( array( 'wprig-course-index' ) );
+}
+?>
 	<main id="primary" class="site-main">
 
 	<?php

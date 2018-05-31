@@ -1,0 +1,72 @@
+.page-header {
+	margin-bottom: 2em;
+	border-bottom: 1px solid #d7d7d7;
+}
+
+@media (--content-query) {
+	.page-header {
+		margin-bottom: 3em;
+		padding-bottom: 2em;
+	}
+}
+
+.entry-title {
+	text-align: center;
+}
+
+.tax-course .page-title {
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+@media (--content-query) {
+	.tax-course .page-title {
+		margin-top: 1em;
+	}
+}
+
+.course-grid {
+	padding-left: 1em!important;
+	padding-right: 1em!important;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 325px);
+	justify-content: center;
+	grid-gap: 2em;
+}
+
+.course-grid article {
+	border: 1px solid var(--border-color);
+}
+
+.video-thumb {
+	margin: 0;
+}
+
+.course-grid .entry-title {
+	margin: 0;
+	padding: .5em .7em;
+	font-size: 1.15em;
+	font-weight: normal;
+	text-align: left;
+}
+
+.course-grid a {
+	color: var(--global-font-color);
+	text-decoration: none;
+}
+
+.course-grid a:hover .entry-title,
+.course-grid a:focus .entry-title {
+	text-decoration: underline;
+}
+
+.course-grid .entry-meta {
+	margin: 0;
+	padding: 0 1em 1em;
+	color: grey;
+}
+
+.instructor {
+	display: block;
+	color: var(--global-font-color);
+}

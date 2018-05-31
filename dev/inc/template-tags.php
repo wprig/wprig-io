@@ -98,7 +98,7 @@ function wprig_posted_on() {
 
 	$posted_on = sprintf(
 		/* translators: %s: post date. */
-		esc_html_x( 'Posted on %s', 'post date', 'wprig' ),
+		esc_html_x( 'Published %s', 'post date', 'wprig' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 

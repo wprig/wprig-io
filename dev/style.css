@@ -487,11 +487,11 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
-.entry-header h1.entry-title {
-	font-size: 32px;
-	font-size: 2rem;
+.entry-header .entry-title {
+	font-size: 40px;
+	font-size: 2.5rem;
 	line-height: 1.4;
-	margin: 1em 0;
+	margin: 0;
 }
 
 dfn, cite, em, i {
@@ -724,7 +724,7 @@ textarea {
 	margin-bottom: 1em;
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 1px solid rgb(215, 215, 215);
+	border-bottom: 1px solid var(--border-color);
 }
 
 .header-image {
@@ -976,7 +976,7 @@ ul ul .dropdown-toggle {
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-	border-bottom: 1px solid #111;
+	border-bottom: 1px solid var(--border-color);
 	margin: 0 auto 2em;
 	max-width: 720px;
 	overflow: hidden;
@@ -986,6 +986,7 @@ ul ul .dropdown-toggle {
 
 .nav-links {
 	display: flex;
+	justify-content: space-between;
 }
 
 .comment-navigation .nav-previous,
@@ -1003,6 +1004,7 @@ ul ul .dropdown-toggle {
 }
 
 .post-navigation-sub span {
+	font-size: 80%;
 	color: var(--global-font-color);
 	text-decoration: none;
 	display: inline-block;

@@ -99,7 +99,7 @@ function wprig_add_body_style() {
 		$preloads['wprig-content'] = wprig_get_preload_stylesheet_uri( $wp_styles, 'wprig-content' );
 
 		// Preload sidebar.css and widget.css.
-		if ( is_active_sidebar( 'sidebar-1' ) ) {
+		if ( is_active_sidebar( 'sidebar-1' && ! is_front_page() ) ) {
 			$preloads['wprig-sidebar'] = wprig_get_preload_stylesheet_uri( $wp_styles, 'wprig-sidebar' );
 			$preloads['wprig-widgets'] = wprig_get_preload_stylesheet_uri( $wp_styles, 'wprig-widgets' );
 		}
@@ -114,6 +114,11 @@ function wprig_add_body_style() {
 			$preloads['wprig-front-page'] = wprig_get_preload_stylesheet_uri( $wp_styles, 'wprig-front-page' );
 		}
 
+		// Preload course-index.css.
+		if ( is_tax( 'course' || is_page( 'learn' ) ) ) {
+			$preloads['wprig-front-page'] = wprig_get_preload_stylesheet_uri( $wp_styles, 'wprig-course-index' );
+		}
+
 		// Output the preload markup in <head>.
 		foreach ( $preloads as $handle => $src ) {
 			echo '<link rel="preload" id="' . esc_attr( $handle ) . '-preload" href="' . esc_url( $src ) . '" as="style" />';
@@ -123,19 +128,3 @@ function wprig_add_body_style() {
 
 }
 add_action( 'wp_head', 'wprig_add_body_style' );
-
-/**
- * Add dropdown toggle buttons to nav menu.
- *
- * @param string $menu Nav menu HTML.
- * @return string Modified nav menu HTML.
- */
-function wprig_add_menu_dropdown_toggle_button( $menu ) {
-	$dropdown_button = sprintf(
-		'<button class="dropdown-toggle" aria-expanded="false"><span class="dropdown-symbol" aria-hidden="true">&rsaquo;</span><span class="screen-reader-text">%s</span></button>',
-		esc_html__( 'Expand child menu', 'wprig' )
-	);
-	return preg_replace( '/(?=<ul)/', $dropdown_button, $menu );
-}
-// add_filter( 'wp_list_pages', 'wprig_add_menu_dropdown_toggle_button' );
-// add_filter( 'wp_nav_menu', 'wprig_add_menu_dropdown_toggle_button' );

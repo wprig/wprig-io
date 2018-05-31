@@ -67,33 +67,33 @@ msgstr ""
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: functions.php:47
+#: functions.php:48
 msgid "Primary"
 msgstr ""
 
-#: functions.php:199
+#: functions.php:200
 msgctxt "Roboto Condensed font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:203
+#: functions.php:204
 msgctxt "Crimson Text font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:268
+#: functions.php:269
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:270
+#: functions.php:271
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:310, inc/template-functions.php:136
+#: functions.php:312
 msgid "Expand child menu"
 msgstr ""
 
-#: functions.php:311
+#: functions.php:313
 msgid "Collapse child menu"
 msgstr ""
 
@@ -137,7 +137,7 @@ msgstr ""
 #. translators: %s: post date.
 #: inc/template-tags.php:101
 msgctxt "post date"
-msgid "Posted on %s"
+msgid "Published %s"
 msgstr ""
 
 #. translators: %s: post author.
@@ -195,6 +195,32 @@ msgstr ""
 msgid "Next attachment:"
 msgstr ""
 
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-learn.php:57, template-parts/content.php:43
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content-learn.php:70, template-parts/content-page.php:25, template-parts/content.php:56
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-learn.php:93
+msgid "Previous lesson:"
+msgstr ""
+
+#: template-parts/content-learn.php:94
+msgid "Next lesson:"
+msgstr ""
+
+#: template-parts/content-learn.php:102
+msgid "Previous article:"
+msgstr ""
+
+#: template-parts/content-learn.php:103
+msgid "Next article:"
+msgstr ""
+
 #: template-parts/content-none.php:13
 msgid "Nothing Found"
 msgstr ""
@@ -210,15 +236,6 @@ msgstr ""
 
 #: template-parts/content-none.php:49
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr ""
-
-#: template-parts/content-page.php:25, template-parts/content.php:56
-msgid "Pages:"
-msgstr ""
-
-#. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:43
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #: template-parts/content.php:76
