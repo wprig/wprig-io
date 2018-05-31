@@ -137,5 +137,5 @@ function wprig_add_menu_dropdown_toggle_button( $menu ) {
 	);
 	return preg_replace( '/(?=<ul)/', $dropdown_button, $menu );
 }
-add_filter( 'wp_list_pages', 'wprig_add_menu_dropdown_toggle_button' );
-add_filter( 'wp_nav_menu', 'wprig_add_menu_dropdown_toggle_button' );
+// add_filter( 'wp_list_pages', 'wprig_add_menu_dropdown_toggle_button' );
+// add_filter( 'wp_nav_menu', 'wprig_add_menu_dropdown_toggle_button' );

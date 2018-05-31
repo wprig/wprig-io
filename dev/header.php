@@ -25,18 +25,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-	<symbol id="site-logo" viewBox="0 0 360 432">
-		<title>WP Rig logo</title>
-		<g class="logo-wp">
-			<path d="M72 72H0v216h72V144h72V72zM216 72v72h72v72h-72v-72h-72v144h144v36c0 19.9-16.1 36-36 36H144v72h144c39.8 0 72-32.2 72-72V72H216z" fill="black"/>
-		</g>
-		<g class="logo-rig">
-			<path d="M29.6 432H13.1L.3 359.8h18.9l4.8 40 9.7-40h15.1l9.7 40 4.9-40h18.8L69.6 432H53l-11.7-43.5L29.6 432zM105.6 407.6V432H88.2v-72.2h24.3c14.1 0 23.8 7.3 23.8 23.4 0 16-9.5 24.4-23.8 24.4h-6.9zm3.5-14.4c7.2 0 9.7-2.7 9.7-9.9 0-5.9-2.5-9-9.7-9h-3.6v18.9h3.6z"  fill="black"/>
-		</g>
-		<path d="M144 0h72v72h-72z" class="logo-dot" fill="black"/>
-	</symbol>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none"><symbol id="site-logo" viewBox="0 0 360 432"><title>WP Rig logo</title><g class="logo-wp"><path d="M72 72H0v216h72V144h72V72zM216 72v72h72v72h-72v-72h-72v144h144v36c0 19.9-16.1 36-36 36H144v72h144c39.8 0 72-32.2 72-72V72H216z" fill="black"/></g><g class="logo-rig"><path d="M29.6 432H13.1L.3 359.8h18.9l4.8 40 9.7-40h15.1l9.7 40 4.9-40h18.8L69.6 432H53l-11.7-43.5L29.6 432zM105.6 407.6V432H88.2v-72.2h24.3c14.1 0 23.8 7.3 23.8 23.4 0 16-9.5 24.4-23.8 24.4h-6.9zm3.5-14.4c7.2 0 9.7-2.7 9.7-9.9 0-5.9-2.5-9-9.7-9h-3.6v18.9h3.6z"  fill="black"/></g><path d="M144 0h72v72h-72z" class="logo-dot" fill="black"/></symbol></svg>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wprig' ); ?></a>
 		<header id="masthead" class="site-header">
@@ -49,21 +38,21 @@
 
 				<figure class="site-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<svg width="360" height="432">
-							<use href="#site-logo" x="0" y="0" width="360" height="432" />
+						<svg>
+							<use href="#site-logo" />
 						</svg>
 					</a>
 				</figure>
 
 				<?php if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<p class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php endif; ?>
 
 				<?php $wprig_description = get_bloginfo( 'description', 'display' ); ?>
 				<?php if ( $wprig_description || is_customize_preview() ) : ?>
-					<p class="site-description"><?php echo $wprig_description; /* WPCS: xss ok. */ ?></p>
+					<p class="site-description screen-reader-text"><?php echo $wprig_description; /* WPCS: xss ok. */ ?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 

@@ -721,7 +721,10 @@ textarea {
 --------------------------------------------------------------*/
 
 .site-header {
-	padding-bottom: 1em;
+	margin-bottom: 1em;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgb(215, 215, 215);
 }
 
 .header-image {
@@ -735,11 +738,21 @@ textarea {
 
 .site-branding {
 	text-align: center;
-	padding: 60px 0 1.75em;
+	padding: 0;
 }
 
 .site-logo {
+	margin: 0;
+}
 
+.site-logo a {
+	display: block;
+	padding: .5em;
+}
+
+.site-logo svg {
+	height: 3em;
+	width: 3em;
 }
 
 .logo-dot {
@@ -776,7 +789,7 @@ textarea {
 .main-navigation {
 	clear: both;
 	display: block;
-	margin: 0 auto 2em;
+	margin: 0;
 	padding: 0 1em;
 	max-width: calc(var(--content-width) * 16)px; /* Fallback for older browsers. */
 	max-width: var(--content-width)rem;
@@ -885,6 +898,10 @@ ul ul .dropdown-toggle {
 		display: none;
 	}
 
+	.main-navigation {
+		display: flex;
+		align-items: center;
+	}
 	/*
 	.main-navigation .menu-item-has-children > a,
 	.main-navigation .page_item_has_children > a {
