@@ -32,6 +32,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 # Footer
 # Infinite scroll
 --------------------------------------------------------------*/
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -482,7 +487,6 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: var(--highlight-font-family);
 	color: #32373c;
 	clear: both;
 }
@@ -509,8 +513,7 @@ address {
 pre {
 	background: #eee;
 	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
+	/* font-size: .8em; */
 	line-height: 1.6;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -522,6 +525,11 @@ code, kbd, tt, var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 12.8px;
 	font-size: .8em;
+	background: hsl(0, 0%, 90%);
+}
+
+pre code {
+	background: inherit;
 }
 
 abbr, acronym {
@@ -613,15 +621,15 @@ table {
 # Links
 --------------------------------------------------------------*/
 a {
-	color: #0073aa;
+	color: var(--key-color);
 }
 
 a:visited {
-	color: #333;
+	color: var(--global-font-color);
 }
 
 a:hover, a:focus, a:active {
-	color: #00a0d2;
+	color: var(--key-color);
 }
 
 a:focus {
@@ -761,7 +769,6 @@ textarea {
 
 .site-title {
 	margin: 0 1em;
-	font-family: var(--highlight-font-family);
 	font-size: 38px;
 	font-weight: bold;
 	line-height: 1.2;
@@ -775,7 +782,6 @@ textarea {
 
 .site-description {
 	margin: .4375em 0 0;
-	font-family: var(--highlight-font-family);
 	font-size: 17px;
 	font-weight: inherit;
 	line-height: 1.4;
@@ -793,14 +799,12 @@ textarea {
 	padding: 0 1em;
 	max-width: calc(var(--content-width) * 16)px; /* Fallback for older browsers. */
 	max-width: var(--content-width)rem;
-	font-family: var(--highlight-font-family);
 }
 
 .menu-toggle {
 	display: block;
 	margin: 1.2em auto;
 	padding: .6em 1.2em .5em;
-	font-family: var(--highlight-font-family);
 	font-size: 80%;
 	text-transform: uppercase;
 	border: 2px solid black;
@@ -981,7 +985,6 @@ ul ul .dropdown-toggle {
 	max-width: 720px;
 	overflow: hidden;
 	padding-bottom: 2em;
-	font-family: var(--highlight-font-family);
 }
 
 .nav-links {
@@ -1014,26 +1017,93 @@ ul ul .dropdown-toggle {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
-	margin: 1em 0 0;
-	padding: 2em 0;
-	font-family: var(--highlight-font-family);
+	margin-top: 3em;
+	padding-top: 2em;
+	color: white;
+	background-color: hsl(202, 66%, 20%);
+}
+
+.site-footer a,
+.site-footer a:hover,
+.site-footer a:focus,
+.site-footer a:visited {
+	color: white;
+}
+
+@media (--content-query) {
+	.site-info {
+		display: grid;
+		grid-template-columns: minmax(5em, 14.5em) minmax(12.5em, calc(var(--content-width) * 16)px) minmax(5em, 14.5em);
+		grid-gap: 2em;
+		justify-content: center;
+	}
 }
 
 .site-info {
-	text-align: center;
+	padding: 0 1.5rem 2em;
 }
 
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-	/* Theme Footer (when set to scrolling) */
-	display: none;
+@media screen and (max-width: 60em) {
+	.footer-nav,
+	.footer-info {
+		margin-bottom: 2em;
+	}
 }
 
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
+.footer-nav {
+	flex-basis: 20em;
+}
+
+.footer-nav ul {
+	margin: 0 0 0 -.5em;
+	padding: 0;
+	list-style-type: none;
+}
+
+.footer-nav a {
 	display: block;
+	padding: .2em 0 .2em .5em;
+	text-decoration: none;
+}
+
+.footer-nav a:hover,
+.footer-nav a:focus {
+	background: hsl(202, 66%, 25%)
+}
+
+.footer-info {
+	flex: 0 0 40%;
+}
+
+.footer-training {
+	flex-basis: 20em;
+	/* text-align: right; */
+}
+
+.footer-training img {
+	padding-top: .5em;
+	width: 280px;
+}
+
+.site-meta {
+	padding: 1em 1em 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-top: 1px solid  hsla(0, 0%, 100%, .2);
+	background-color: hsl(202, 66%, 10%);
+}
+
+.site-tools::after {
+	display: block;
+	margin: 1.5em auto 1em;
+	width: 2em;
+	content: '';
+	border-bottom: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+.site-hosting img {
+	padding: .5em 0;
+	width: 180px;
 }

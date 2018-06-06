@@ -1,12 +1,11 @@
 {
 	"variables": {
 		"global-font-color": "#333",
-    "global-font-family": "'Crimson Text', serif",
+    "global-font-family": "'Barlow Semi Condensed', sans-serif",
     "global-font-size": "20",
     "global-font-line-height": "1.4",
     "key-color": "#2a92d0",
     "border-color": "#d7d7d7",
-    "highlight-font-family": "'Roboto Condensed', sans-serif",
     "content-width": "45"
 	},
 	"queries": {

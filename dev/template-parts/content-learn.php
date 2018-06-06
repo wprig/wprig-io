@@ -8,7 +8,7 @@
  */
 
 ?>
-
+<?php wp_print_styles( array( 'wprig-course-index' ) ); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
@@ -88,14 +88,18 @@
 <?php
 if ( is_singular() ) :
 	if ( has_term( 'video', 'modus' ) ) {
-		the_post_navigation(
-			array(
-				'prev_text'    => '<div class="post-navigation-sub"><span>' . esc_html__( 'Previous lesson:', 'wprig' ) . '</span></div><figure class="video-thumb">' . get_the_post_thumbnail( $next_post->ID, 'video-thumb' ) . '</figure><span class="rel-title">%title</span>',
-				'next_text'    => '<div class="post-navigation-sub"><span>' . esc_html__( 'Next lesson:', 'wprig' ) . '</span></div><figure class="video-thumb">' . get_the_post_thumbnail( $next_post->ID, 'video-thumb' ) . '</figure><span class="rel-title">%title</span>',
-				'in_same_term' => true,
-				'taxonomy'     => 'course',
-			)
-		);
+		?>
+		<h2 class="learn-more"><?php echo esc_attr( 'More from this course:', 'wprig' ); ?></h2>
+		<section class="course-grid">
+			<?php
+			$next_post     = get_adjacent_post( true, '', false, 'course' );
+			$previous_post = get_adjacent_post( true, '', true, 'course' );
+
+			wprig_prevnext_card( $previous_post, true );
+			wprig_prevnext_card( $next_post, false );
+			?>
+		</section>
+		<?php
 	} elseif ( has_term( 'documentation', 'modus' ) || has_term( 'tutorial', 'modus' ) ) {
 		the_post_navigation(
 			array(

@@ -10,7 +10,17 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<?php
+	if ( is_front_page() ) :
+		?>
+		<header class="entry-header screen-reader-text">
+		<?php
+	else :
+		?>
+		<header class="entry-header">
+		<?php
+	endif;
+	?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 

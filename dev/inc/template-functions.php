@@ -115,7 +115,7 @@ function wprig_add_body_style() {
 		}
 
 		// Preload course-index.css.
-		if ( is_tax( 'course' || is_page( 'learn' ) ) ) {
+		if ( is_tax( 'course' || is_page( 'learn' ) || has_term( 'video', 'modus' ) ) ) {
 			$preloads['wprig-front-page'] = wprig_get_preload_stylesheet_uri( $wp_styles, 'wprig-course-index' );
 		}
 

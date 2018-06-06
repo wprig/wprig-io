@@ -15,233 +15,269 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: 404.php:16
+#: 404.php:16, rigtheme/404.php:16, rigtheme/verbose/404.php:16
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:20
+#: 404.php:20, rigtheme/404.php:20, rigtheme/verbose/404.php:20
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr ""
 
-#: 404.php:29
+#: 404.php:29, rigtheme/404.php:29, rigtheme/verbose/404.php:29
 msgid "Most Used Categories"
 msgstr ""
 
 #. translators: %1$s: smiley
-#: 404.php:48
+#. translators: %1$s: smiley
+#. translators: %1$s: smiley
+#: 404.php:48, rigtheme/404.php:48, rigtheme/verbose/404.php:48
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
 #. translators: 1: title.
-#: comments.php:36
+#. translators: 1: title.
+#. translators: 1: title.
+#: comments.php:36, rigtheme/comments.php:36, rigtheme/verbose/comments.php:36
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr ""
 
 #. translators: 1: comment count number, 2: title.
-#: comments.php:42
+#. translators: 1: comment count number, 2: title.
+#. translators: 1: comment count number, 2: title.
+#: comments.php:42, rigtheme/comments.php:42, rigtheme/verbose/comments.php:42
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:85
+#: comments.php:85, rigtheme/comments.php:85, rigtheme/verbose/comments.php:85
 msgid "New comment(s)"
 msgstr ""
 
-#: comments.php:94
+#: comments.php:94, rigtheme/comments.php:94, rigtheme/verbose/comments.php:94
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:23
+#: footer.php:23, rigtheme/footer.php:23, rigtheme/verbose/footer.php:23
 msgid "https://wordpress.org/"
 msgstr ""
 
 #. translators: %s: CMS name, i.e. WordPress.
-#: footer.php:26
+#. translators: %s: CMS name, i.e. WordPress.
+#. translators: %s: CMS name, i.e. WordPress.
+#: footer.php:26, rigtheme/footer.php:26, rigtheme/verbose/footer.php:26
 msgid "Proudly powered by %s"
 msgstr ""
 
 #. translators: 1: Theme name, 2: Theme author.
-#: footer.php:32
+#. translators: 1: Theme name, 2: Theme author.
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:32, rigtheme/footer.php:32, rigtheme/verbose/footer.php:32
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: functions.php:48
+#: functions.php:48, rigtheme/functions.php:48, rigtheme/verbose/functions.php:48
 msgid "Primary"
 msgstr ""
 
-#: functions.php:200
+#: functions.php:200, rigtheme/functions.php:200, rigtheme/verbose/functions.php:200
 msgctxt "Roboto Condensed font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:204
+#: functions.php:204, rigtheme/functions.php:204, rigtheme/verbose/functions.php:204
 msgctxt "Crimson Text font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:269
+#: functions.php:269, rigtheme/functions.php:269, rigtheme/verbose/functions.php:269
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:271
+#: functions.php:271, rigtheme/functions.php:271, rigtheme/verbose/functions.php:271
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:312
+#: functions.php:312, rigtheme/functions.php:312, rigtheme/verbose/functions.php:312
 msgid "Expand child menu"
 msgstr ""
 
-#: functions.php:313
+#: functions.php:313, rigtheme/functions.php:313, rigtheme/verbose/functions.php:313
 msgid "Collapse child menu"
 msgstr ""
 
-#: header.php:30
+#: header.php:30, rigtheme/header.php:30, rigtheme/verbose/header.php:30
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:80
+#: header.php:80, rigtheme/header.php:80, rigtheme/verbose/header.php:80
 msgid "Menu"
 msgstr ""
 
-#: inc/customizer.php:38
+#: inc/customizer.php:38, rigtheme/inc/customizer.php:38, rigtheme/verbose/inc/customizer.php:38
 msgid "Theme Options"
 msgstr ""
 
-#: inc/customizer.php:54, inc/customizer.php:101
+#: inc/customizer.php:54, inc/customizer.php:101, rigtheme/inc/customizer.php:54, rigtheme/inc/customizer.php:101, rigtheme/verbose/inc/customizer.php:54, rigtheme/verbose/inc/customizer.php:101
 msgid "Lazy-load images"
 msgstr ""
 
-#: inc/customizer.php:57
+#: inc/customizer.php:57, rigtheme/inc/customizer.php:57, rigtheme/verbose/inc/customizer.php:57
 msgid "Lazy-loading images means images are loaded only when they are in view. Improves performance, but can result in content jumping around on slower connections."
 msgstr ""
 
-#: inc/customizer.php:59
+#: inc/customizer.php:59, rigtheme/inc/customizer.php:59, rigtheme/verbose/inc/customizer.php:59
 msgid "Lazy-load on (default)"
 msgstr ""
 
-#: inc/customizer.php:60
+#: inc/customizer.php:60, rigtheme/inc/customizer.php:60, rigtheme/verbose/inc/customizer.php:60
 msgid "Lazy-load off"
 msgstr ""
 
-#: inc/customizer.php:102
+#: inc/customizer.php:102, rigtheme/inc/customizer.php:102, rigtheme/verbose/inc/customizer.php:102
 msgid "Load images immediately"
 msgstr ""
 
 #. translators: %s: search query.
-#: inc/template-tags.php:65
+#. translators: %s: search query.
+#. translators: %s: search query.
+#: inc/template-tags.php:65, rigtheme/inc/template-tags.php:65, rigtheme/verbose/inc/template-tags.php:65
 msgid "Search Results for: %s"
 msgstr ""
 
 #. translators: %s: post date.
-#: inc/template-tags.php:101
+#. translators: %s: post date.
+#. translators: %s: post date.
+#: inc/template-tags.php:101, rigtheme/inc/template-tags.php:101, rigtheme/verbose/inc/template-tags.php:101
 msgctxt "post date"
 msgid "Published %s"
 msgstr ""
 
 #. translators: %s: post author.
-#: inc/template-tags.php:115
+#. translators: %s: post author.
+#. translators: %s: post author.
+#: inc/template-tags.php:115, rigtheme/inc/template-tags.php:115, rigtheme/verbose/inc/template-tags.php:115
 msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:131
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:131, rigtheme/inc/template-tags.php:131, rigtheme/verbose/inc/template-tags.php:131
 msgid ", "
 msgstr ""
 
 #. translators: 1: list of categories.
-#: inc/template-tags.php:134
+#. translators: 1: list of categories.
+#. translators: 1: list of categories.
+#: inc/template-tags.php:134, rigtheme/inc/template-tags.php:134, rigtheme/verbose/inc/template-tags.php:134
 msgid "Posted in %1$s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:148
+#. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:148, rigtheme/inc/template-tags.php:148, rigtheme/verbose/inc/template-tags.php:148
 msgctxt "list item separator"
 msgid ", "
 msgstr ""
 
 #. translators: 1: list of tags.
-#: inc/template-tags.php:151
+#. translators: 1: list of tags.
+#. translators: 1: list of tags.
+#: inc/template-tags.php:151, rigtheme/inc/template-tags.php:151, rigtheme/verbose/inc/template-tags.php:151
 msgid "Tagged %1$s"
 msgstr ""
 
 #. translators: %s: post title
-#: inc/template-tags.php:166
+#. translators: %s: post title
+#. translators: %s: post title
+#: inc/template-tags.php:166, rigtheme/inc/template-tags.php:166, rigtheme/verbose/inc/template-tags.php:166
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:188
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:188, rigtheme/inc/template-tags.php:188, rigtheme/verbose/inc/template-tags.php:188
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
 #. translators: %s: original post where attachment was added.
-#: inc/template-tags.php:266
+#. translators: %s: original post where attachment was added.
+#. translators: %s: original post where attachment was added.
+#: inc/template-tags.php:266, rigtheme/inc/template-tags.php:266, rigtheme/verbose/inc/template-tags.php:266
 msgctxt "original post"
 msgid "in %s"
 msgstr ""
 
-#: inc/template-tags.php:282
+#: inc/template-tags.php:282, rigtheme/inc/template-tags.php:282, rigtheme/verbose/inc/template-tags.php:282
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:286
+#: inc/template-tags.php:286, rigtheme/inc/template-tags.php:286, rigtheme/verbose/inc/template-tags.php:286
 msgid "Previous attachment:"
 msgstr ""
 
-#: inc/template-tags.php:292
+#: inc/template-tags.php:292, rigtheme/inc/template-tags.php:292, rigtheme/verbose/inc/template-tags.php:292
 msgid "Next attachment:"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content-learn.php:57, template-parts/content.php:43
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-learn.php:57, template-parts/content.php:43, rigtheme/template-parts/content-learn.php:57, rigtheme/template-parts/content.php:43, rigtheme/verbose/template-parts/content-learn.php:57, rigtheme/verbose/template-parts/content.php:43
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: template-parts/content-learn.php:70, template-parts/content-page.php:25, template-parts/content.php:56
+#: template-parts/content-learn.php:70, template-parts/content-page.php:35, template-parts/content.php:56, rigtheme/template-parts/content-learn.php:70, rigtheme/template-parts/content-page.php:25, rigtheme/template-parts/content.php:56, rigtheme/verbose/template-parts/content-learn.php:70, rigtheme/verbose/template-parts/content-page.php:25, rigtheme/verbose/template-parts/content.php:56
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/content-learn.php:93
-msgid "Previous lesson:"
-msgstr ""
-
-#: template-parts/content-learn.php:94
-msgid "Next lesson:"
-msgstr ""
-
-#: template-parts/content-learn.php:102
+#: template-parts/content-learn.php:106, rigtheme/template-parts/content-learn.php:102, rigtheme/verbose/template-parts/content-learn.php:102
 msgid "Previous article:"
 msgstr ""
 
-#: template-parts/content-learn.php:103
+#: template-parts/content-learn.php:107, rigtheme/template-parts/content-learn.php:103, rigtheme/verbose/template-parts/content-learn.php:103
 msgid "Next article:"
 msgstr ""
 
-#: template-parts/content-none.php:13
+#: template-parts/content-none.php:13, rigtheme/template-parts/content-none.php:13, rigtheme/verbose/template-parts/content-none.php:13
 msgid "Nothing Found"
 msgstr ""
 
 #. translators: 1: link to WP admin new post page.
-#: template-parts/content-none.php:26
+#. translators: 1: link to WP admin new post page.
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:26, rigtheme/template-parts/content-none.php:26, rigtheme/verbose/template-parts/content-none.php:26
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: template-parts/content-none.php:41
+#: template-parts/content-none.php:41, rigtheme/template-parts/content-none.php:41, rigtheme/verbose/template-parts/content-none.php:41
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: template-parts/content-none.php:49
+#: template-parts/content-none.php:49, rigtheme/template-parts/content-none.php:49, rigtheme/verbose/template-parts/content-none.php:49
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: template-parts/content.php:76
+#: template-parts/content.php:76, rigtheme/template-parts/content.php:76, rigtheme/verbose/template-parts/content.php:76
 msgid "Previous:"
 msgstr ""
 
-#: template-parts/content.php:77
+#: template-parts/content.php:77, rigtheme/template-parts/content.php:77, rigtheme/verbose/template-parts/content.php:77
 msgid "Next:"
+msgstr ""
+
+#: rigtheme/template-parts/content-learn.php:93, rigtheme/verbose/template-parts/content-learn.php:93
+msgid "Previous lesson:"
+msgstr ""
+
+#: rigtheme/template-parts/content-learn.php:94, rigtheme/verbose/template-parts/content-learn.php:94
+msgid "Next lesson:"
 msgstr ""

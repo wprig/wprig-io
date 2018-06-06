@@ -297,3 +297,34 @@ function wprig_the_attachment_navigation() {
 	</nav><!-- .navigation .attachment-navigation -->
 	<?php
 }
+
+/**
+ * Prints HTML for the previous/next movie cards in single movie views.
+ */
+function wprig_prevnext_card( $lesson_post, $previous ) {
+	if ( null === $lesson_post->ID ) {
+		return;
+	}
+	?>
+
+	<aside class="course-item">
+		<a href="<?php echo esc_url( get_permalink( $lesson_post->ID ) ); ?>" rel="bookmark">
+			<div class="course-wrapper">
+				<div class="video-thumb">
+					<?php echo get_the_post_thumbnail( $lesson_post->ID, 'video-thumb' ); ?>
+				</div><!-- .post-thumbnail -->
+				<h2 class="entry-title" rel="bookmark"><?php echo esc_attr( $lesson_post->post_title ); ?></h2>
+			</div>
+			<div class="movie-cta">
+				<?php
+				if ( $previous ) {
+					echo esc_html( 'Watch previous lesson.', 'wprig' );
+				} else {
+					echo esc_html( 'Watch next lesson.', 'wprig' );
+				}
+				?>
+			</div>
+		</a>
+	</aside>
+	<?php
+}

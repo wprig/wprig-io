@@ -9,11 +9,14 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="course-item">
 	<a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark">
-		<div class="video-thumb">
-			<?php the_post_thumbnail( 'video-thumb' ); ?>
-		</div><!-- .post-thumbnail -->
-		<?php the_title( '<h2 class="entry-title" rel="bookmark">', '</h2>' ); ?>
+		<div class="course-wrapper">
+			<div class="video-thumb">
+				<?php the_post_thumbnail( 'video-thumb' ); ?>
+			</div><!-- .post-thumbnail -->
+			<?php the_title( '<h2 class="entry-title" rel="bookmark">', '</h2>' ); ?>
+		</div>
+		<div class="movie-cta">Watch this lesson.</div>
 	</a>
 </article>

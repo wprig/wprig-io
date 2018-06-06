@@ -19,19 +19,47 @@ if ( ! is_front_page() ) {
 ?>
 
 <footer id="colophon" class="site-footer">
-	<div class="site-info">
-		<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wprig' ) ); ?>">
+	<section class="site-info">
+		<nav class="footer-nav">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'footer',
+					'menu_id'        => 'footer-menu',
+				)
+			);
+			?>
+		</nav>
+		<aside class="footer-info">
+			WP Rig is an open source project originally created by Morten Rand-Hendriksen with the support of <a href="https://linkedin.com/learning?trk=insiders_WPRig_learning">LinkedIn Learning</a>. Continuing development of WP Rig is by its <a href="https://github.com/wprig/wprig/graphs/contributors">contributors</a>.
+		</aside>
+		<aside class="footer-training">
+			Free training for WP Rig provided by:
+			<a href="https://linkedin.com/learning?trk=insiders_WPRig_learning">
+				<span class="screen-reader-text">LinkedIn Learning.</span>
+				<img src="<?php echo esc_url( get_theme_file_uri() . '/images/lil-logo.svg' ); ?>">
+			</a>
+		</aside>
+	</section>
+	<section class="site-meta">
+		<div class="site-tools">
 			<?php
 			/* translators: %s: CMS name, i.e. WordPress. */
-			printf( esc_html__( 'Proudly powered by %s', 'wprig' ), 'WordPress' );
+			printf( esc_html__( 'Powered by %s. ', 'wprig' ), '<a href="' . esc_url( __( 'https://wordpress.org/', 'wprig' ) ) . '">WordPress</a>' );
 			?>
-		</a>
-		<span class="sep"> | </span>
-		<?php
-			/* translators: 1: Theme name, 2: Theme author. */
-			printf( esc_html__( 'Theme: %1$s by %2$s.', 'wprig' ), '<a href="https://github.com/mor10/pstt/">wprig</a>', 'the contributors' );
-		?>
-	</div><!-- .site-info -->
+			<?php
+			/* translators: %s: Theme name. */
+			printf( esc_html__( 'Theme: %s.', 'wprig' ), '<a href="' . esc_url( __( 'https://github.com/wprig/wprig/', 'wprig' ) ) . '">Rig</a>' );
+			?>
+		</div>
+		<div class="site-hosting">
+			Hosting provided by: <a href="https://siteground.com">
+				<span class="screen-reader-text">SiteGround.</span>
+				<img src="<?php echo esc_url( get_theme_file_uri() . '/images/siteground.svg' ); ?>">
+			</a>
+		</div>
+
+	</section><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
 

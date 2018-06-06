@@ -46,6 +46,7 @@ function wprig_setup() {
 	register_nav_menus(
 		array(
 			'primary' => esc_html__( 'Primary', 'wprig' ),
+			'footer'  => esc_html__( 'Footer', 'wprig' ),
 		)
 	);
 
@@ -197,23 +198,15 @@ function wprig_fonts_url() {
 	/**
 	 * Translator: If Roboto Sans does not support characters in your language, translate this to 'off'.
 	 */
-	$roboto = esc_html_x( 'on', 'Roboto Condensed font: on or off', 'wprig' );
-	/**
-	 * Translator: If Crimson Text does not support characters in your language, translate this to 'off'.
-	 */
-	$crimson_text = esc_html_x( 'on', 'Crimson Text font: on or off', 'wprig' );
+	$barlow = esc_html_x( 'on', 'Barlow Semi Condensed font: on or off', 'wprig' );
 
 	$font_families = array();
 
-	if ( 'off' !== $roboto ) {
-		$font_families[] = 'Roboto Condensed:400,400i,700,700i';
+	if ( 'off' !== $barlow ) {
+		$font_families[] = 'Barlow Semi Condensed:400,400i,600,600i';
 	}
 
-	if ( 'off' !== $crimson_text ) {
-		$font_families[] = 'Crimson Text:400,400i,600,600i';
-	}
-
-	if ( in_array( 'on', array( $roboto, $crimson_text ) ) ) {
+	if ( in_array( 'on', array( $barlow ) ) ) {
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
 			'subset' => urlencode( 'latin,latin-ext' ),
