@@ -90,6 +90,8 @@ function wprig_add_body_style() {
 
 	if ( ! wprig_is_amp() ) {
 
+		global $template;
+
 		// Get registered styles.
 		$wp_styles = wp_styles();
 

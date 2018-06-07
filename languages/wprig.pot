@@ -1,0 +1,82 @@
+# Copyright (C) 2018 wprig
+# This file is distributed under the same license as the wprig package.
+msgid ""
+msgstr ""
+"Project-Id-Version: wprig\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Morten Rand-Hendriksen\n"
+"Report-Msgid-Bugs-To: wprig\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. translators: %s: search query.
+#: inc/template-tags.php:65
+msgid "Search Results for: %s"
+msgstr ""
+
+#. translators: %s: post date.
+#: inc/template-tags.php:101
+msgctxt "post date"
+msgid "Published %s"
+msgstr ""
+
+#. translators: %s: post author.
+#: inc/template-tags.php:115
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:131
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:134
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:148
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:151
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:166
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:188
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: original post where attachment was added.
+#: inc/template-tags.php:266
+msgctxt "original post"
+msgid "in %s"
+msgstr ""
+
+#: inc/template-tags.php:282
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:286
+msgid "Previous attachment:"
+msgstr ""
+
+#: inc/template-tags.php:292
+msgid "Next attachment:"
+msgstr ""
