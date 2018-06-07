@@ -62,7 +62,8 @@
 .post-navigation,
 .page-navigation,
 .comments-area,
-.archive-description {
+.archive-description,
+.learn-more {
 	margin: 1.5em auto;
 	padding-right: 24px;
 	padding-right: 1.5rem;
@@ -82,7 +83,8 @@
 	.post-navigation,
 	.page-navigation,
 	.comments-area,
-	.archive-description {
+	.archive-description,
+	.learn-more {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
@@ -146,8 +148,29 @@
 }
 
 /*--------------------------------------------------------------
-## Learn pages
+## LiL features
 --------------------------------------------------------------*/
+
+.lil-embed {
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%;
+}
+
+.lil-embed iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: calc(50vw + var(--content-width)rem / 2);
+	height: 100%;
+	border: 0;
+}
+
+.entry-content h2 span {
+	font-size: 65%;
+	font-weight: normal;
+}
 
 /*--------------------------------------------------------------
 ## Blocks
@@ -170,13 +193,25 @@
  * .wp-block-preformatted
  * .wp-block-code
  * .wp-block-verse
-
  */
 
- .wp-block-quote {
-	 padding-left: 1em;
-	 border-left: 4px solid black;
- }
+.has-background a {
+	color: inherit;
+}
+
+.has-key-color-background-color {
+background-color: var(--key-color);
+}
+
+.has-white-color,
+.has-white-color a {
+	color: white;
+}
+
+.wp-block-quote {
+	padding-left: 1em;
+	border-left: 4px solid black;
+}
 
  .wp-block-quote cite, .wp-block-quote footer {
 	display: block;
@@ -199,8 +234,16 @@
 
 .entry-content ul,
 .entry-content ol {
-	/* padding-right: 2.5em;
-	padding-left: 2.5em; */
+	padding-right: 3rem;
+	padding-left: 3rem;
+}
+
+@media (--content-query) {
+	.entry-content ul,
+	.entry-content ol {
+		padding-right: 1em;
+		padding-left: 1em;
+	}
 }
 
 .entry-content ul ul,

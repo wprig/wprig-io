@@ -2,7 +2,7 @@
  * Styles for the WordPress post/page editor.
  * Ensures a visual match between back- and front-end.
  */
-.edit-post-visual-editor {
+.editor-writing-flow {
 	color: var(--global-font-color);
 	font-family: var(--global-font-family);
 	font-size: var(--global-font-size)px;
@@ -20,4 +20,17 @@
 	font-size: 32px;
 	font-size: 2rem;
 	line-height: 1.4;
+}
+
+.has-background a {
+	color: inherit;
+}
+
+.has-key-color-background-color {
+background-color: var(--key-color);
+}
+
+.has-white-color,
+.has-white-color a {
+	color: white;
 }

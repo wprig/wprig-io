@@ -31,7 +31,7 @@ if ( ! is_front_page() ) {
 			?>
 		</nav>
 		<aside class="footer-info">
-			WP Rig is an open source project originally created by Morten Rand-Hendriksen with the support of <a href="https://linkedin.com/learning?trk=insiders_WPRig_learning">LinkedIn Learning</a>. Continuing development of WP Rig is by its <a href="https://github.com/wprig/wprig/graphs/contributors">contributors</a>.
+			WP Rig is an open source project originally created by <a href="https://www.linkedin.com/in/mortenrandhendriksen/">Morten Rand-Hendriksen</a> with the support of <a href="https://linkedin.com/learning?trk=insiders_WPRig_learning">LinkedIn Learning</a>. Continuing development of WP Rig is by its <a href="https://github.com/wprig/wprig/graphs/contributors">contributors</a>. This website is powered by <a href="https://wordpress.org/">WordPress</a> using the <a href="https://github.com/wprig/wprig-io/">Rig</a> theme built using WP Rig.
 		</aside>
 		<aside class="footer-training">
 			Free training for WP Rig provided by:
@@ -42,16 +42,6 @@ if ( ! is_front_page() ) {
 		</aside>
 	</section>
 	<section class="site-meta">
-		<div class="site-tools">
-			<?php
-			/* translators: %s: CMS name, i.e. WordPress. */
-			printf( esc_html__( 'Powered by %s. ', 'wprig' ), '<a href="' . esc_url( __( 'https://wordpress.org/', 'wprig' ) ) . '">WordPress</a>' );
-			?>
-			<?php
-			/* translators: %s: Theme name. */
-			printf( esc_html__( 'Theme: %s.', 'wprig' ), '<a href="' . esc_url( __( 'https://github.com/wprig/wprig/', 'wprig' ) ) . '">Rig</a>' );
-			?>
-		</div>
 		<div class="site-hosting">
 			Hosting provided by: <a href="https://siteground.com">
 				<span class="screen-reader-text">SiteGround.</span>

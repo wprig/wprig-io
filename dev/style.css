@@ -492,10 +492,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .entry-header .entry-title {
+	margin-bottom: .5em;
 	font-size: 40px;
 	font-size: 2.5rem;
-	line-height: 1.4;
-	margin: 0;
+	line-height: 1.2;
 }
 
 dfn, cite, em, i {
@@ -921,6 +921,7 @@ ul ul .dropdown-toggle {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		align-items: center;
 	}
 
 	.main-navigation ul ul {
@@ -973,7 +974,29 @@ ul ul .dropdown-toggle {
 	}
 }
 
+.main-navigation .download-link a {
+	width: inherit;
+	padding: 0 1.2em;
+	border-radius: 5px;
+	color: var(--key-color);
+	line-height: 1.8em;
+	text-decoration: none;
+	background-color: white;
+	border: 2px solid var(--key-color);
+}
 
+@media (--content-query) {
+	.download-link a {
+		margin: 0 1em;
+	}
+}
+
+
+.download-link a:hover,
+.download-link a:focus {
+	color: white;
+	background-color: var(--key-color);
+}
 /*--------------------------------------------------------------
 # Content navigation
 --------------------------------------------------------------*/
@@ -1019,7 +1042,7 @@ ul ul .dropdown-toggle {
 .site-footer {
 	margin-top: 3em;
 	padding-top: 2em;
-	color: white;
+	color: hsla(0, 0%, 100%, .8);
 	background-color: hsl(202, 66%, 20%);
 }
 
@@ -1027,7 +1050,7 @@ ul ul .dropdown-toggle {
 .site-footer a:hover,
 .site-footer a:focus,
 .site-footer a:visited {
-	color: white;
+	color: hsla(0, 0%, 100%, .8);
 }
 
 @media (--content-query) {
@@ -1050,10 +1073,6 @@ ul ul .dropdown-toggle {
 	}
 }
 
-.footer-nav {
-	flex-basis: 20em;
-}
-
 .footer-nav ul {
 	margin: 0 0 0 -.5em;
 	padding: 0;
@@ -1072,12 +1091,24 @@ ul ul .dropdown-toggle {
 }
 
 .footer-info {
-	flex: 0 0 40%;
+	padding: 2em 0;
+	border-top: 1px solid hsla(0, 0%, 100%, .2);
+	border-bottom: 1px solid hsla(0, 0%, 100%, .2);
 }
 
-.footer-training {
-	flex-basis: 20em;
-	/* text-align: right; */
+@media (--content-query) {
+	.footer-info {
+		padding: 0 1.8em;
+		border-top: none;
+		border-right: 1px solid hsla(0, 0%, 100%, .2);
+		border-bottom: none;
+		border-left: 1px solid hsla(0, 0%, 100%, .2);
+	}
+}
+
+.footer-info a {
+	text-decoration: none;
+	border-bottom: 1px solid white;
 }
 
 .footer-training img {
