@@ -67,6 +67,28 @@
 	border-color: white;
 }
 
+.wceu-promo {
+	padding: 1em 1em .8em;
+	background: #F8BF39;
+	text-align: center;
+}
+
+.wceu-promo a {
+	color: var(--global-font-color);
+	text-decoration: none;
+}
+
+.wceu-promo h3 {
+	margin: 0;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.wceu-promo em {
+	text-decoration: underline;
+}
+
+
 .entry-content {
 	margin-top: 0;
 }

@@ -34,6 +34,12 @@ wp_print_styles( array( 'wprig-content', 'wprig-front-page' ) ); // Note: If thi
 				<a class="front-cta" href="#learn">Get learning</a>
 			</div>
 		</section>
+		<aside class="wceu-promo">
+			<a href="https://wprig.io/wceu2018">
+				<h3>LinkedIn Learning &hearts; WCEU</h3>
+				<p>In celebration of WordCamp Europe, LinkedIn Learning has <em>unlocked 6 courses</em>, free until July 10th, 2018.</p>
+			</a>
+		</aside>
 
 		<?php
 		while ( have_posts() ) :

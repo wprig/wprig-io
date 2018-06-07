@@ -2,7 +2,7 @@
 
 module.exports = {
 	theme: {
-		name: 'rigtheme',
+		name: 'wprig',
 		author: 'Morten Rand-Hendriksen'
 	},
 	dev: {
