@@ -516,3 +516,18 @@ object {
 .gallery-caption {
 	font-size: 80%;
 }
+
+/* Other things */
+.more-link {
+	display: block;
+	padding: .4em .5em .5em;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid;
+}
+
+.more-link:hover,
+.more-link:focus {
+	color: white;
+	background: var(--key-color);
+}

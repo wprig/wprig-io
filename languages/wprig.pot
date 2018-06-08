@@ -15,6 +15,105 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: 404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:20
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:29
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:48
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:36
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:42
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:85
+msgid "New comment(s)"
+msgstr ""
+
+#: comments.php:94
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:48
+msgid "Primary"
+msgstr ""
+
+#: functions.php:49
+msgid "Footer"
+msgstr ""
+
+#: functions.php:173
+msgctxt "Barlow Semi Condensed font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:234
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:236
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:277
+msgid "Expand child menu"
+msgstr ""
+
+#: functions.php:278
+msgid "Collapse child menu"
+msgstr ""
+
+#: header.php:30
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:80
+msgid "Menu"
+msgstr ""
+
+#: inc/customizer.php:38
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:54, inc/customizer.php:101
+msgid "Lazy-load images"
+msgstr ""
+
+#: inc/customizer.php:57
+msgid "Lazy-loading images means images are loaded only when they are in view. Improves performance, but can result in content jumping around on slower connections."
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "Lazy-load on (default)"
+msgstr ""
+
+#: inc/customizer.php:60
+msgid "Lazy-load off"
+msgstr ""
+
+#: inc/customizer.php:102
+msgid "Load images immediately"
+msgstr ""
+
 #. translators: %s: search query.
 #: inc/template-tags.php:65
 msgid "Search Results for: %s"
@@ -79,4 +178,47 @@ msgstr ""
 
 #: inc/template-tags.php:292
 msgid "Next attachment:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-learn.php:57, template-parts/content.php:43
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content-learn.php:70, template-parts/content-page.php:35, template-parts/content.php:56
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-learn.php:106
+msgid "Previous article:"
+msgstr ""
+
+#: template-parts/content-learn.php:107
+msgid "Next article:"
+msgstr ""
+
+#: template-parts/content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:26
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:41
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:49
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content.php:78
+msgid "Previous:"
+msgstr ""
+
+#: template-parts/content.php:79
+msgid "Next:"
 msgstr ""

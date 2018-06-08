@@ -17,7 +17,7 @@
 	color: white;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-image: url('../images/head-bg-dark.jpg');
+	background-image: url('/wp-content/themes/wprigio/images/head-bg-dark.jpg');
 	background-size: cover;
 	background-position: center;
 }

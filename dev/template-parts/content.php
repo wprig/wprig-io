@@ -62,8 +62,10 @@
 
 	<footer class="entry-footer">
 		<?php
-		wprig_post_categories();
-		wprig_post_tags();
+		if ( ! is_home() ) {
+			wprig_post_categories();
+			wprig_post_tags();
+		}
 		wprig_edit_post_link();
 		?>
 	</footer><!-- .entry-footer -->
