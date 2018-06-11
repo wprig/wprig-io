@@ -130,3 +130,17 @@ function wprig_add_body_style() {
 
 }
 add_action( 'wp_head', 'wprig_add_body_style' );
+
+/**
+ * Filter the course taxonomy pages to display course movies in correct order
+ * and show all movies regardless of length.
+ *
+ * @param array $query The main query.
+ */
+function wprig_filter_course_archive( $query ) {
+	if ( is_tax( 'course' ) && $query->is_main_query() && ! is_admin() ) {
+		$query->set( 'posts_per_page', -1 );
+		$query->set( 'order', 'asc' );
+	}
+}
+add_action( 'pre_get_posts', 'wprig_filter_course_archive' );
