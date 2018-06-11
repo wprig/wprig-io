@@ -498,6 +498,10 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 }
 
+.single-learn .entry-header .entry-title {
+	margin: .1em 0;
+}
+
 dfn, cite, em, i {
 	font-style: italic;
 }

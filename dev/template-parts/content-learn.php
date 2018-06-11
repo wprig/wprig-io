@@ -32,8 +32,11 @@
 			<?php
 			if ( ! has_term( 'video', 'modus' ) ) {
 				wprig_posted_on();
-			}
 				wprig_posted_by();
+			}
+			if ( has_term( 'video', 'modus' ) ) {
+				wprig_instructed_by();
+			}
 			if ( ! has_term( 'video', 'modus' ) ) {
 				wprig_comments_link();
 			}

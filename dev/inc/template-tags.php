@@ -120,6 +120,19 @@ function wprig_posted_by() {
 }
 
 /**
+ * Prints HTML with meta information for the current instructor.
+ */
+function wprig_instructed_by() {
+	$byline = sprintf(
+		/* translators: %s: post author. */
+		esc_html_x( 'Instructor: %s', 'post author', 'wprig' ),
+		'<span class="author vcard">' . esc_html( get_the_author() ) . '</span>'
+	);
+
+	echo '<span class="byline"> ' . $byline . '. </span>'; // WPCS: XSS OK.
+}
+
+/**
  * Prints a link list of the current categories for the post.
  *
  * If additional post types should display categories, add them to the conditional statement at the top.
