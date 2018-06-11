@@ -131,70 +131,76 @@ msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
+#. translators: %s: post author.
+#: inc/template-tags.php:128
+msgctxt "post author"
+msgid "Instructor: %s"
+msgstr ""
+
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:131
+#: inc/template-tags.php:144
 msgid ", "
 msgstr ""
 
 #. translators: 1: list of categories.
-#: inc/template-tags.php:134
+#: inc/template-tags.php:147
 msgid "Posted in %1$s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:148
+#: inc/template-tags.php:161
 msgctxt "list item separator"
 msgid ", "
 msgstr ""
 
 #. translators: 1: list of tags.
-#: inc/template-tags.php:151
+#: inc/template-tags.php:164
 msgid "Tagged %1$s"
 msgstr ""
 
 #. translators: %s: post title
-#: inc/template-tags.php:166
+#: inc/template-tags.php:179
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:188
+#: inc/template-tags.php:201
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
 #. translators: %s: original post where attachment was added.
-#: inc/template-tags.php:266
+#: inc/template-tags.php:279
 msgctxt "original post"
 msgid "in %s"
 msgstr ""
 
-#: inc/template-tags.php:282
+#: inc/template-tags.php:295
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:286
+#: inc/template-tags.php:299
 msgid "Previous attachment:"
 msgstr ""
 
-#: inc/template-tags.php:292
+#: inc/template-tags.php:305
 msgid "Next attachment:"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content-learn.php:57, template-parts/content.php:43
+#: template-parts/content-learn.php:60, template-parts/content.php:43
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: template-parts/content-learn.php:70, template-parts/content-page.php:35, template-parts/content.php:56
+#: template-parts/content-learn.php:73, template-parts/content-page.php:35, template-parts/content.php:56
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/content-learn.php:106
+#: template-parts/content-learn.php:109
 msgid "Previous article:"
 msgstr ""
 
-#: template-parts/content-learn.php:107
+#: template-parts/content-learn.php:110
 msgid "Next article:"
 msgstr ""
 

@@ -24,14 +24,14 @@ wp_print_styles( array( 'wprig-content', 'wprig-front-page' ) ); // Note: If thi
 				<use xlink:href="#site-logo" x="0" y="0"/>
 			</svg>
 			<div class="front-tagline">
-				The Progressive WordPress Theme Boilerplate
+				The Progressive WordPress Theme Rig
 			</div>
 			<div class="front-subhead">
 				Starter Theme + Build Process
 			</div>
 			<div class="front-cta-list">
 				<a class="front-cta" href="#install">Get started</a>
-				<a class="front-cta" href="#learn">Get learning</a>
+				<a class="front-cta" href="https://wprig.io/learn">Get learning</a>
 			</div>
 		</section>
 		<aside class="wceu-promo">
