@@ -43,7 +43,7 @@ if ( ! is_front_page() ) {
 	</section>
 	<section class="site-meta">
 		<div class="site-hosting">
-			Hosting provided by: <a href="https://siteground.com">
+			Hosting provided by: <a href="https://www.siteground.com/wordpress-hosting.htm?campaign=wprig">
 				<span class="screen-reader-text">SiteGround.</span>
 				<img src="<?php echo esc_url( get_theme_file_uri() . '/images/siteground.svg' ); ?>">
 			</a>
